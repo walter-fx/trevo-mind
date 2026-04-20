@@ -142,12 +142,21 @@ body {
 .typing {
     white-space: normal;
     overflow: visible;
-    border-right: 2px solid var(--e-global-color-secondary);
     display: inline;
     width: auto;
     max-width: 100%;
     min-height: 16px;
     word-break: break-word;
+}
+
+.typing::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-left: 3px;
+    vertical-align: -0.12em;
+    background: var(--e-global-color-secondary);
     animation: trevomindCaretBlink 0.8s step-end infinite;
 }
 
@@ -168,10 +177,10 @@ body {
 @keyframes trevomindCaretBlink {
     0%,
     100% {
-        border-right-color: rgba(16, 32, 24, 0.9);
+        opacity: 1;
     }
     50% {
-        border-right-color: transparent;
+        opacity: 0;
     }
 }
 

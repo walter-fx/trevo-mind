@@ -160,6 +160,17 @@ body {
     animation: trevomindCaretBlink 0.8s step-end infinite;
 }
 
+.banner-con .banner-img-con .coment-box1,
+.banner-con .banner-img-con .coment-box2 {
+    align-items: flex-start !important;
+}
+
+.banner-con .banner-img-con .coment-box1 img,
+.banner-con .banner-img-con .coment-box2 img {
+    flex: 0 0 auto;
+    margin-top: 2px;
+}
+
 @keyframes trevomindCtaPulse {
     0%,
     100% {

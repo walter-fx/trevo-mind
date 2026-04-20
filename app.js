@@ -29,6 +29,18 @@ function markdownLinkUrl(value) {
     return match ? match[2] : String(value);
 }
 
+function normalizePhoneDigits(value) {
+    return String(value ?? '').replace(/\D/g, '');
+}
+
+function whatsappUrl(phone, brandName) {
+    const digits = normalizePhoneDigits(phone);
+    if (!digits) return '#contato';
+    const intlDigits = digits.startsWith('55') ? digits : `55${digits}`;
+    const message = encodeURIComponent(`Olá! Vim pelo site da ${brandName || 'TrevoMind'} e quero agendar uma reunião.`);
+    return `https://wa.me/${intlDigits}?text=${message}`;
+}
+
 function setText(id, value) {
     const element = document.getElementById(id);
     if (element) element.textContent = value ?? '';
@@ -174,7 +186,7 @@ function renderWorkModels(items) {
             <li class="position-relative"><i class="fa-solid fa-check"></i>${escapeHtml(item.title)}</li>
             <li class="position-relative"><i class="fa-solid fa-check"></i>${escapeHtml(item.description)}</li>
           </ul>
-          <a href="#contato" class="text-decoration-none primary_btn">Agendar reunião</a>
+          <a href="{{WHATSAPP_URL}}" class="text-decoration-none primary_btn" target="_blank" rel="noopener noreferrer">Agendar reunião</a>
         </div>
       </div>
     </div>
@@ -283,6 +295,7 @@ function startTypingLoop(elementId, text, options = {}) {
 
 function hydrateSite(content) {
     const { project, branding, hero, about, process, differentials, work_models: workModels, cases, cta_section: cta, template_mapping: mapping } = content;
+    const meetingUrl = whatsappUrl(project.phone, project.brand_name);
 
     document.title = `${project.brand_name} | ${project.tagline}`;
 
@@ -291,12 +304,24 @@ function hydrateSite(content) {
     setHtml('mainMenu', renderMainMenu(mapping?.header?.menu_items));
     setHtml('footerMenu', renderFooterMenu(mapping?.header?.menu_items));
     setText('headerCta', mapping?.header?.button_text || project.cta_primary);
+    const headerCta = document.getElementById('headerCta');
+    if (headerCta) {
+        headerCta.href = meetingUrl;
+        headerCta.target = '_blank';
+        headerCta.rel = 'noopener noreferrer';
+    }
 
     setHtml('heroBadges', renderHeroBadges(mapping?.banner?.badge_items || hero.support_points));
     setHtml('heroTitle', `${escapeHtml(hero.title)} <span class="d-inline-block font-weight-bold color-blue">${escapeHtml(hero.subtitle)}</span>`);
     setText('heroDescription', mapping?.banner?.description || hero.description);
     setText('heroPrimary', mapping?.banner?.primary_button || hero.primary_button);
     setText('heroSecondary', mapping?.banner?.secondary_button || hero.secondary_button);
+    const heroPrimary = document.getElementById('heroPrimary');
+    if (heroPrimary) {
+        heroPrimary.href = meetingUrl;
+        heroPrimary.target = '_blank';
+        heroPrimary.rel = 'noopener noreferrer';
+    }
     setText('heroBubbleOne', '');
     setText('heroBubbleTwo', '');
     startTypingLoop('heroBubbleOne', branding.value_proposition, {
@@ -323,15 +348,27 @@ function hydrateSite(content) {
     setText('processHeadline', 'Como a TrevoMind atua do diagnóstico ao resultado');
     setHtml('processSteps', renderProcessSteps(process.steps));
     setText('processCta', project.cta_primary);
+    const processCta = document.getElementById('processCta');
+    if (processCta) {
+        processCta.href = meetingUrl;
+        processCta.target = '_blank';
+        processCta.rel = 'noopener noreferrer';
+    }
 
     setText('diffSectionTitle', differentials.section_title);
     setText('diffSubtitle', differentials.subtitle);
     setHtml('differentialsItems', renderDifferentials(differentials.items));
     setText('diffCta', project.cta_primary);
+    const diffCta = document.getElementById('diffCta');
+    if (diffCta) {
+        diffCta.href = meetingUrl;
+        diffCta.target = '_blank';
+        diffCta.rel = 'noopener noreferrer';
+    }
 
     setText('workModelsSectionTitle', workModels.section_title);
     setText('workModelsHeadline', 'Modelos flexíveis para cada necessidade de comunicação');
-    setHtml('workModelsItems', renderWorkModels(workModels.items));
+    setHtml('workModelsItems', renderWorkModels(workModels.items).replaceAll('{{WHATSAPP_URL}}', meetingUrl));
 
     setText('casesSectionTitle', cases.section_title);
     setText('casesHeadline', 'Resultados, campanhas e posicionamentos que viraram referência');
@@ -346,7 +383,11 @@ function hydrateSite(content) {
     setText('contactButton', 'Falar com a TrevoMind');
 
     const ctaButton = document.getElementById('ctaButton');
-    if (ctaButton) ctaButton.href = markdownLinkUrl(project.email || 'mailto:trevomind@gmail.com');
+    if (ctaButton) {
+        ctaButton.href = meetingUrl;
+        ctaButton.target = '_blank';
+        ctaButton.rel = 'noopener noreferrer';
+    }
 
     const contactButton = document.getElementById('contactButton');
     if (contactButton) contactButton.href = markdownLinkUrl(project.website || '#');

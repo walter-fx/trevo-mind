@@ -140,11 +140,14 @@ body {
 }
 
 .typing {
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: normal;
+    overflow: visible;
     border-right: 2px solid var(--e-global-color-secondary);
-    width: fit-content;
+    display: inline;
+    width: auto;
+    max-width: 100%;
     min-height: 16px;
+    word-break: break-word;
     animation: trevomindCaretBlink 0.8s step-end infinite;
 }
 

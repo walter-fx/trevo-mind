@@ -1,0 +1,458 @@
+{
+    "project": {
+        "brand_name": "TrevoMind",
+        "tagline": "A sorte nasce da estratégia",
+        "short_pitch": "Agência estratégica de marketing, comunicação e assessoria de imprensa que constrói presença, identidade e resultado real.",
+        "description": "A TrevoMind nasceu para transformar a forma como marcas, instituições e profissionais se comunicam com o mundo. Não é uma agência de posts, mas uma parceira estratégica que constrói presença, identidade e resultado real.",
+        "website": "[www.trevomind.com](http://www.trevomind.com)",
+        "email": "[trevomind@gmail.com](mailto:trevomind@gmail.com)",
+        "phone": "(13) 99748-8454",
+        "instagram": "@trevomind",
+        "cta_primary": "Agendar reunião",
+        "cta_secondary": "Agende uma conversa sem compromisso e descubra o que a TrevoMind pode fazer pela sua organização.",
+        "closing_phrase": "Sem compromisso. Com resultado."
+    },
+    "branding": {
+        "keywords": [
+            "estratégia",
+            "presença",
+            "resultado",
+            "inteligência",
+            "posicionamento",
+            "reputação",
+            "crescimento",
+            "execução"
+        ],
+        "tone_of_voice": [
+            "estratégico",
+            "institucional",
+            "seguro",
+            "inteligente",
+            "consultivo",
+            "profissional"
+        ],
+        "value_proposition": "Marketing + Comunicação + Imprensa em uma só entrega, sem fragmentação de fornecedores.",
+        "brand_promise": "Resultados extraordinários não são obra do acaso. São produto de método, visão e execução impecável.",
+        "signature_phrase": "Não foi sorte. Foi estratégia. Foi inteligência. Foi a TrevoMind."
+    },
+    "hero": {
+        "eyebrow": "Marketing · Comunicação · Assessoria de Imprensa",
+        "title": "A sorte nasce da estratégia.",
+        "subtitle": "Uma agência que pensa antes de agir.",
+        "description": "Parceira estratégica para marcas, instituições e profissionais que desejam construir presença, identidade e resultado real.",
+        "primary_button": "Agendar reunião",
+        "secondary_button": "Falar com a TrevoMind",
+        "support_points": [
+            "Estratégia antes da execução",
+            "Entrega integrada",
+            "Resultado mensurável"
+        ]
+    },
+    "about": {
+        "section_title": "Quem somos",
+        "headline": "Uma agência que pensa antes de agir.",
+        "text": "A TrevoMind nasceu para transformar a forma como marcas, instituições e profissionais se comunicam com o mundo. Não somos uma agência de posts, somos uma parceira estratégica que constrói presença, identidade e resultado real.",
+        "pillars": [
+            {
+                "title": "Estratégia",
+                "description": "Diagnóstico profundo antes de qualquer ação."
+            },
+            {
+                "title": "Execução",
+                "description": "Do planejamento à entrega com excelência."
+            },
+            {
+                "title": "Resultado",
+                "description": "Métricas reais, impacto mensurável."
+            }
+        ],
+        "quote": "Se um dia te disserem que foi sorte — você sorri e responde: Não foi sorte, foi a TrevoMind."
+    },
+    "problem": {
+        "section_title": "O problema do mercado de comunicação",
+        "items": [
+            {
+                "title": "Ruído sem estratégia",
+                "description": "Empresas investem em comunicação, mas sem posicionamento claro, presença sem impacto."
+            },
+            {
+                "title": "Ações isoladas",
+                "description": "Campanhas, posts e eventos desconectados não constroem marca. Constroem apenas despesa."
+            },
+            {
+                "title": "Falta de visão integrada",
+                "description": "Poucos fornecedores conseguem unir marketing, imprensa e audiovisual em uma entrega."
+            },
+            {
+                "title": "Resultado invisível",
+                "description": "Sem indicadores e sem método, fica impossível saber o que funciona, e o que drena recursos."
+            }
+        ]
+    },
+    "vision": {
+        "section_title": "Nossa visão",
+        "headline": "Marketing não é post. É posicionamento.",
+        "statements": [
+            "Toda organização tem uma história única e ela merece ser contada com inteligência e propósito.",
+            "Resultado não é acidente. É consequência direta de estratégia bem executada.",
+            "Comunicação de verdade transforma percepção, reputação e receita."
+        ],
+        "footer_line": "Estratégia · Presença · Resultado"
+    },
+    "services": {
+        "section_title": "O que fazemos",
+        "items": [
+            "Marketing Institucional & Digital",
+            "Tráfego Pago",
+            "Meta & Google Ads",
+            "Assessoria de Imprensa",
+            "Treinamentos & Palestras",
+            "Produção Audiovisual",
+            "Eventos & Ativações de Marca",
+            "Criação de Campanhas & Conteúdo"
+        ]
+    },
+    "differentials": {
+        "section_title": "Nossos diferenciais",
+        "subtitle": "O que nos separa de uma agência comum",
+        "items": [
+            {
+                "title": "Visão estratégica",
+                "description": "Não somos operacionais. Pensamos antes de executar."
+            },
+            {
+                "title": "Integração única",
+                "description": "Marketing + Imprensa + Audiovisual em uma só entrega."
+            },
+            {
+                "title": "Experiência multissetorial",
+                "description": "Projetos para ensino, empresas e setor público."
+            },
+            {
+                "title": "Do planejamento à ação",
+                "description": "Capacidade total de execução, do briefing ao resultado."
+            },
+            {
+                "title": "Foco em percepção de valor",
+                "description": "Geramos impacto real, não apenas impressões."
+            }
+        ]
+    },
+    "process": {
+        "section_title": "Como atuamos",
+        "steps": [
+            {
+                "number": "01",
+                "title": "Diagnóstico",
+                "description": "Escuta ativa, análise de mercado e mapeamento de oportunidades. Entendemos o cenário antes de propor qualquer ação."
+            },
+            {
+                "number": "02",
+                "title": "Estratégia",
+                "description": "Definição de posicionamento, público, canais e mensagem. Cada decisão com base em dados e inteligência de mercado."
+            },
+            {
+                "number": "03",
+                "title": "Execução",
+                "description": "Campanhas, conteúdo, audiovisual, eventos e treinamentos com excelência técnica e alinhamento estratégico."
+            },
+            {
+                "number": "04",
+                "title": "Mensuração",
+                "description": "KPIs, relatórios e ajustes contínuos. Monitoramos resultados para garantir que cada investimento gere retorno."
+            }
+        ]
+    },
+    "solutions": {
+        "section_title": "Soluções",
+        "subtitle": "Pacotes personalizados para cada necessidade",
+        "categories": [
+            {
+                "title": "Presença Digital",
+                "items": [
+                    "Gestão de redes sociais",
+                    "Produção de conteúdo",
+                    "Tráfego pago (Meta + Google)",
+                    "Inbound Marketing"
+                ]
+            },
+            {
+                "title": "Assessoria de Imprensa",
+                "items": [
+                    "Release e pauta jornalística",
+                    "Relacionamento com veículos",
+                    "Gestão de crise comunicacional",
+                    "Cobertura de eventos"
+                ]
+            },
+            {
+                "title": "Marca & Identidade",
+                "items": [
+                    "Branding institucional",
+                    "Posicionamento estratégico",
+                    "Storytelling de marca",
+                    "Identidade visual"
+                ]
+            },
+            {
+                "title": "Eventos & Experiências",
+                "items": [
+                    "Produção de eventos",
+                    "Ativações de marca",
+                    "Experiências imersivas",
+                    "Cerimoniais e formaturas"
+                ]
+            }
+        ]
+    },
+    "cases": {
+        "section_title": "Cases & referências",
+        "items": [
+            {
+                "segment": "Instituição de Ensino",
+                "title": "Captação + Posicionamento",
+                "description": "Estruturação completa da comunicação de uma IES: branding, campanhas de captação e gestão de redes sociais.",
+                "result": "Aumento de 40% nos leads qualificados no primeiro ciclo.",
+                "market": "Educação Superior"
+            },
+            {
+                "segment": "Assessoria de Imprensa",
+                "title": "Campanha Institucional",
+                "description": "Planejamento e execução de assessoria para órgão público e privado: releases, pauta em veículos regionais e cobertura de eventos.",
+                "result": "Mais de 80 inserções na mídia em 6 meses.",
+                "market": "Setor Público"
+            },
+            {
+                "segment": "Empresa Privada",
+                "title": "Lançamento de Marca",
+                "description": "Da identidade ao posicionamento digital: naming, identidade visual, site, campanhas de tráfego pago e eventos de ativação.",
+                "result": "Marca estruturada do zero ao mercado em 90 dias.",
+                "market": "Empreendedorismo"
+            }
+        ]
+    },
+    "results": {
+        "section_title": "Resultados que a TrevoMind entrega",
+        "items": [
+            {
+                "title": "Crescimento de Marca",
+                "description": "Presença forte, reconhecida e respeitada pelo público certo."
+            },
+            {
+                "title": "Geração de Leads",
+                "description": "Mais oportunidades qualificadas, funil estruturado."
+            },
+            {
+                "title": "Posicionamento Sólido",
+                "description": "Reputação construída com inteligência e consistência."
+            },
+            {
+                "title": "Reputação Fortalecida",
+                "description": "Comunicação que gera confiança e autoridade real."
+            },
+            {
+                "title": "Experiência de Marca",
+                "description": "Conexão emocional genuína com o seu público."
+            },
+            {
+                "title": "Processos Estruturados",
+                "description": "Comunicação organizada, do planejamento à entrega."
+            }
+        ]
+    },
+    "audiences": {
+        "section_title": "Para quem é",
+        "items": [
+            {
+                "title": "Instituições de Ensino",
+                "description": "Faculdades, escolas, cursos técnicos e IES que precisam crescer com posicionamento e captação estruturada."
+            },
+            {
+                "title": "Empresas Privadas",
+                "description": "Negócios que querem construir uma marca sólida, competitiva e com comunicação profissional."
+            },
+            {
+                "title": "Órgãos Públicos",
+                "description": "Prefeituras, secretarias e autarquias que precisam de comunicação institucional eficiente."
+            },
+            {
+                "title": "Marcas Pessoais",
+                "description": "Profissionais, gestores e líderes que querem posicionamento e autoridade de mercado."
+            }
+        ]
+    },
+    "work_models": {
+        "section_title": "Como trabalhamos",
+        "items": [
+            {
+                "number": "01",
+                "title": "Contrato recorrente",
+                "description": "Gestão contínua de marketing, com planejamento mensal, relatórios e entregas periódicas. Ideal para crescimento consistente."
+            },
+            {
+                "number": "02",
+                "title": "Projeto pontual",
+                "description": "Entregas específicas com início, meio e fim definidos: um evento, uma campanha, um lançamento. Foco total no resultado."
+            },
+            {
+                "number": "03",
+                "title": "Consultoria estratégica",
+                "description": "Sessões de diagnóstico e planejamento. Ideal para quem precisa de direção, mas já tem equipe para execução."
+            },
+            {
+                "number": "04",
+                "title": "Parceria institucional",
+                "description": "Modelo co-criado para instituições, prefeituras e entidades com necessidades complexas e multifrentes."
+            }
+        ]
+    },
+    "cta_section": {
+        "headline": "Vamos construir algo grande?",
+        "description": "Agende uma conversa sem compromisso e descubra o que a TrevoMind pode fazer pela sua organização.",
+        "button_text": "Agendar reunião",
+        "support_text": "Sem compromisso. Com resultado."
+    },
+    "contact": {
+        "website": "[www.trevomind.com](http://www.trevomind.com)",
+        "email": "[trevomind@gmail.com](mailto:trevomind@gmail.com)",
+        "phone": "(13) 99748-8454",
+        "instagram": "@trevomind"
+    },
+    "template_mapping": {
+        "header": {
+            "logo_text": "TrevoMind",
+            "menu_items": [
+                "Início",
+                "Quem Somos",
+                "Serviços",
+                "Diferenciais",
+                "Cases",
+                "Contato"
+            ],
+            "button_text": "Agendar reunião"
+        },
+        "banner": {
+            "badge_items": [
+                "Estratégia antes da ação",
+                "Marketing + Comunicação + Imprensa"
+            ],
+            "title": "A sorte nasce da estratégia.",
+            "description": "Uma agência que pensa antes de agir e transforma comunicação em presença, identidade e resultado real.",
+            "primary_button": "Agendar reunião",
+            "secondary_button": "Falar com a TrevoMind"
+        },
+        "features_cards": [
+            {
+                "title": "Estratégia",
+                "description": "Diagnóstico profundo antes de qualquer ação."
+            },
+            {
+                "title": "Execução",
+                "description": "Do planejamento à entrega com excelência."
+            },
+            {
+                "title": "Resultado",
+                "description": "Métricas reais, impacto mensurável."
+            }
+        ],
+        "how_it_works": {
+            "title": "Como atuamos",
+            "items": [
+                "Diagnóstico",
+                "Estratégia",
+                "Execução",
+                "Mensuração"
+            ]
+        },
+        "why_choose_us": {
+            "title": "Nossos diferenciais",
+            "items": [
+                "Visão estratégica",
+                "Integração única",
+                "Experiência multissetorial",
+                "Do planejamento à ação",
+                "Foco em percepção de valor"
+            ]
+        },
+        "pricing_or_models": {
+            "title": "Como trabalhamos",
+            "items": [
+                "Contrato recorrente",
+                "Projeto pontual",
+                "Consultoria estratégica",
+                "Parceria institucional"
+            ]
+        },
+        "testimonials_or_cases": {
+            "title": "Cases & referências",
+            "items": [
+                "Captação + Posicionamento",
+                "Campanha Institucional",
+                "Lançamento de Marca"
+            ]
+        },
+        "faq_suggestions": [
+            {
+                "question": "A TrevoMind atende quais tipos de clientes?",
+                "answer": "Instituições de ensino, empresas privadas, órgãos públicos e marcas pessoais."
+            },
+            {
+                "question": "Quais serviços a TrevoMind oferece?",
+                "answer": "Marketing institucional e digital, tráfego pago, assessoria de imprensa, treinamentos, produção audiovisual, eventos e campanhas."
+            },
+            {
+                "question": "Como funciona o processo de trabalho?",
+                "answer": "A atuação acontece em quatro etapas: diagnóstico, estratégia, execução e mensuração."
+            },
+            {
+                "question": "A contratação pode ser recorrente ou pontual?",
+                "answer": "Sim. A TrevoMind trabalha com contrato recorrente, projeto pontual, consultoria estratégica e parceria institucional."
+            }
+        ],
+        "footer": {
+            "about_text": "A TrevoMind é uma agência estratégica de marketing, comunicação e assessoria de imprensa que entrega presença, identidade e resultado real.",
+            "contact_items": [
+                "[www.trevomind.com](http://www.trevomind.com)",
+                "[trevomind@gmail.com](mailto:trevomind@gmail.com)",
+                "(13) 99748-8454",
+                "@trevomind"
+            ]
+        }
+    },
+    "raw_lists": {
+        "service_keywords": [
+            "marketing institucional",
+            "marketing digital",
+            "tráfego pago",
+            "Meta Ads",
+            "Google Ads",
+            "assessoria de imprensa",
+            "treinamentos",
+            "palestras",
+            "produção audiovisual",
+            "eventos",
+            "ativações de marca",
+            "campanhas",
+            "conteúdo",
+            "branding",
+            "storytelling",
+            "identidade visual",
+            "inbound marketing",
+            "gestão de crise",
+            "cobertura de eventos"
+        ],
+        "market_segments": [
+            "educação superior",
+            "setor público",
+            "empreendedorismo",
+            "marcas pessoais"
+        ],
+        "conversion_phrases": [
+            "A sorte nasce da estratégia.",
+            "Uma agência que pensa antes de agir.",
+            "Marketing não é post. É posicionamento.",
+            "Não foi sorte. Foi estratégia. Foi inteligência. Foi a TrevoMind.",
+            "Quando você estiver pronto para crescer de verdade."
+        ]
+    }
+}

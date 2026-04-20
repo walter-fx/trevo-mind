@@ -1,0 +1,114 @@
+:root {
+    --e-global-color-accent: #1b7f5f;
+    --e-global-color-secondary: #102018;
+    --e-global-color-text: #55645d;
+    --e-global-color-light-blue: #f4fbf7;
+    --e-global-color-light-green: #eefaf4;
+}
+
+.trevomind-template-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trevomind-logo-mark {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1b7f5f, #31b183);
+    padding: 8px;
+    overflow: hidden;
+}
+
+.trevomind-logo-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.trevomind-template-logo span:last-child {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--e-global-color-secondary);
+}
+
+.footer-logo-template span:last-child {
+    color: #fff;
+}
+
+#heroTitle span {
+    color: var(--e-global-color-accent);
+}
+
+#brandingKeywords {
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.trevomind-keyword-item {
+    margin-bottom: 0;
+}
+
+.trevomind-keyword-item span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 122px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--e-global-color-secondary);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+}
+
+.feature-box p,
+.choose-box p,
+.testimonial-box p,
+.faq-con .card-body p,
+.plan-content p,
+.plan-listing li {
+    word-break: normal;
+}
+
+.pricing-box .price-text {
+    font-size: 44px;
+}
+
+.pricing-box .starting-at {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+}
+
+#footerContacts li,
+#footerMenu li {
+    margin-bottom: 14px;
+}
+
+#footerContacts li span,
+#footerContacts li a,
+#footerMenu li a {
+    color: #d0ddd6;
+}
+
+#footerContacts li i,
+#footerMenu li i {
+    margin-right: 10px;
+}
+
+.email-form p {
+    color: #d0ddd6;
+}
+
+@media screen and (max-width: 991px) {
+    #brandingKeywords {
+        justify-content: center !important;
+    }
+}

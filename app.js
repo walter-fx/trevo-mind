@@ -243,6 +243,44 @@ function renderFooterContacts(project, footerItems) {
     }).join('');
 }
 
+function startTypingLoop(elementId, text, options = {}) {
+    const element = document.getElementById(elementId);
+    if (!element || !text) return;
+
+    const typeSpeed = options.typeSpeed || 42;
+    const eraseSpeed = options.eraseSpeed || 26;
+    const holdBeforeErase = options.holdBeforeErase || 1400;
+    const holdBeforeType = options.holdBeforeType || 350;
+    let index = 0;
+    let direction = 1;
+
+    function tick() {
+        element.textContent = text.slice(0, index);
+
+        if (direction === 1) {
+            if (index < text.length) {
+                index += 1;
+                setTimeout(tick, typeSpeed);
+                return;
+            }
+            direction = -1;
+            setTimeout(tick, holdBeforeErase);
+            return;
+        }
+
+        if (index > 0) {
+            index -= 1;
+            setTimeout(tick, eraseSpeed);
+            return;
+        }
+
+        direction = 1;
+        setTimeout(tick, holdBeforeType);
+    }
+
+    tick();
+}
+
 function hydrateSite(content) {
     const { project, branding, hero, about, process, differentials, work_models: workModels, cases, cta_section: cta, template_mapping: mapping } = content;
 
@@ -259,8 +297,20 @@ function hydrateSite(content) {
     setText('heroDescription', mapping?.banner?.description || hero.description);
     setText('heroPrimary', mapping?.banner?.primary_button || hero.primary_button);
     setText('heroSecondary', mapping?.banner?.secondary_button || hero.secondary_button);
-    setText('heroBubbleOne', branding.value_proposition);
-    setText('heroBubbleTwo', branding.signature_phrase);
+    setText('heroBubbleOne', '');
+    setText('heroBubbleTwo', '');
+    startTypingLoop('heroBubbleOne', branding.value_proposition, {
+        typeSpeed: 38,
+        eraseSpeed: 22,
+        holdBeforeErase: 1500,
+        holdBeforeType: 500
+    });
+    startTypingLoop('heroBubbleTwo', branding.signature_phrase, {
+        typeSpeed: 34,
+        eraseSpeed: 20,
+        holdBeforeErase: 1700,
+        holdBeforeType: 900
+    });
 
     setText('shortPitch', project.short_pitch);
     setHtml('brandingKeywords', renderKeywords(branding.keywords));

@@ -139,6 +139,15 @@ body {
     color: #d0ddd6;
 }
 
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--e-global-color-secondary);
+    width: fit-content;
+    min-height: 16px;
+    animation: trevomindCaretBlink 0.8s step-end infinite;
+}
+
 @keyframes trevomindCtaPulse {
     0%,
     100% {
@@ -150,6 +159,16 @@ body {
         transform: scale(1.06);
         box-shadow: 0 18px 34px rgba(27, 127, 95, 0.34);
         opacity: 0.9;
+    }
+}
+
+@keyframes trevomindCaretBlink {
+    0%,
+    100% {
+        border-right-color: rgba(16, 32, 24, 0.9);
+    }
+    50% {
+        border-right-color: transparent;
     }
 }
 

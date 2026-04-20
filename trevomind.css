@@ -7,7 +7,7 @@
 }
 
 body {
-    padding-top: 108px;
+    padding-top: 94px;
 }
 
 .header-con {
@@ -34,7 +34,8 @@ body {
 }
 
 .banner-con {
-    padding-top: 24px;
+    padding-top: 6px;
+    margin-top: -18px;
 }
 
 .trevomind-template-logo {
@@ -154,7 +155,7 @@ body {
 
 @media screen and (max-width: 991px) {
     body {
-        padding-top: 92px;
+        padding-top: 82px;
     }
 
     .header-contact {

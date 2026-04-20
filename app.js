@@ -345,7 +345,7 @@ function hydrateSite(content) {
     setHtml('aboutPillars', renderPillars(mapping?.features_cards || about.pillars));
 
     setText('processSectionTitle', process.section_title);
-    setText('processHeadline', 'Como a TrevoMind atua do diagnóstico ao resultado');
+    setText('processHeadline', 'Como a TrevoMind deveria atuar do diagnóstico ao resultado');
     setHtml('processSteps', renderProcessSteps(process.steps));
     setText('processCta', project.cta_primary);
     const processCta = document.getElementById('processCta');

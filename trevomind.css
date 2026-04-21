@@ -40,9 +40,9 @@ body {
 }
 
 .amazing-features-con img.feature-icon7 {
-    top: calc(48% - 10px);
+    top: calc(48% - 20px);
     left: 50%;
-    width: 52px;
+    width: 57px;
     z-index: 3;
     transform: translate(-50%, -50%);
 }
@@ -501,7 +501,7 @@ body {
     }
 
     .amazing-features-con img.feature-icon7 {
-        width: 43px;
+        width: 47px;
     }
 
     .trevomind-mid-cta {
@@ -564,8 +564,8 @@ body {
     }
 
     .amazing-features-con img.feature-icon7 {
-        width: 37px;
-        top: calc(50% - 10px);
+        width: 41px;
+        top: calc(50% - 20px);
     }
 
     .trevomind-lead-form .secondary_btn {

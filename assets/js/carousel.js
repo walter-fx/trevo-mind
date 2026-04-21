@@ -27,7 +27,7 @@ $(function () {
         }
     })
 })
-// js for home page robot comment loading text
+// js for home page TrevoMind comment loading text
 const text1 = "Hey how we can help you?";
 const text2 = "Can you please help me to creating the task?";
 const element1 = document.getElementById("text1");

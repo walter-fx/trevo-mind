@@ -39,7 +39,7 @@ body {
     margin-top: -18px;
 }
 
-.trevomind-template-logo {
+.trevomind-brand-logo {
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -64,14 +64,14 @@ body {
     display: block;
 }
 
-.trevomind-template-logo span:last-child {
+.trevomind-brand-logo span:last-child {
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
     color: var(--e-global-color-secondary);
 }
 
-.footer-logo-template span:last-child {
+.footer-brand-logo span:last-child {
     color: #fff;
 }
 

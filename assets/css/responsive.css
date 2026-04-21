@@ -175,12 +175,12 @@
         margin-bottom: 40px;
     }
 
-    .robot1 {
+    .trevo1 {
         width: 140px;
         left: 0;
     }
 
-    .robot2 {
+    .trevo2 {
         width: 180px;
         right: 0;
     }
@@ -204,7 +204,7 @@
         width: 550px;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         width: 180px;
     }
 
@@ -230,7 +230,7 @@
         margin-right: 16px;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         top: 118px;
         left: 0;
     }
@@ -301,7 +301,7 @@
         top: 170px;
     }
 
-    .banner-img-con img.animated-robot {
+    .banner-img-con img.animated-trevo {
         width: 100%;
     }
 
@@ -632,7 +632,7 @@
         width: 100%;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         top: 118px;
         left: 0;
         width: 120px;
@@ -643,7 +643,7 @@
     }
 
     .why-choose-us-con .choose-outer-con {
-        grid-template-columns: 49% 49%;
+        grid: auto / 49% 49%;
         margin: 0 auto;
     }
 
@@ -1223,12 +1223,12 @@
         font-size: 26px;
     }
 
-    .robot1 {
+    .trevo1 {
         width: 100px;
         left: -20px;
     }
 
-    .robot2 {
+    .trevo2 {
         width: 120px;
         right: -20px;
     }
@@ -1272,7 +1272,7 @@
         padding-bottom: 20px;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         top: 80px;
         left: 50px;
         width: 100px;
@@ -1809,12 +1809,12 @@
         margin-bottom: 0;
     }
 
-    .robot1 {
+    .trevo1 {
         width: 60px;
         left: -20px;
     }
 
-    .robot2 {
+    .trevo2 {
         width: 80px;
         right: -20px;
     }
@@ -1844,7 +1844,7 @@
         width: 350px;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         left: 20px;
         width: 90px;
     }
@@ -1906,7 +1906,7 @@
         text-align: center;
     }
 
-    .banner-img-con img.animated-robot {
+    .banner-img-con img.animated-trevo {
         width: 320px;
     }
 
@@ -2264,11 +2264,11 @@
         margin: 0 auto;
     }
 
-    .robot1 {
+    .trevo1 {
         display: none;
     }
 
-    .robot2 {
+    .trevo2 {
         display: none;
     }
 
@@ -2291,7 +2291,7 @@
     }
 
     .why-choose-us-con .choose-outer-con {
-        grid-template-columns: 100%;
+        grid: auto / 100%;
     }
 
     .faq-con .accordion-card .btn-link:before {
@@ -2330,7 +2330,7 @@
         width: 300px;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         top: 60px;
         left: 8px;
         width: 70px;
@@ -2432,7 +2432,7 @@
         margin: 0 10px;
     }
 
-    .banner-img-con img.animated-robot {
+    .banner-img-con img.animated-trevo {
         width: 270px;
     }
 
@@ -2536,7 +2536,7 @@
         display: none;
     }
 
-    .how-it-works-con img.robot-img {
+    .how-it-works-con img.trevo-img {
         display: none;
     }
 

@@ -508,8 +508,19 @@
                 var startOffset = 0;
                 var offset = 0;
 
+                function cycleWidth() {
+                    return track.scrollWidth / 2;
+                }
+
+                function normalizeOffset(value) {
+                    var cycle = cycleWidth();
+                    if (!cycle) return value;
+                    var normalized = value % cycle;
+                    return normalized > 0 ? normalized - cycle : normalized;
+                }
+
                 function setOffset(value) {
-                    offset = value;
+                    offset = normalizeOffset(value);
                     track.style.setProperty('--clientes-drag-offset', offset + 'px');
                 }
 
@@ -545,6 +556,9 @@
                 window.addEventListener('mouseup', endDrag);
                 window.addEventListener('touchend', endDrag);
                 window.addEventListener('touchcancel', endDrag);
+                window.addEventListener('resize', function () {
+                    setOffset(offset);
+                });
             });
 
             if (typeof WOW === 'function') {

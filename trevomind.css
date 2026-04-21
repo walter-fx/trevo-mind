@@ -40,7 +40,7 @@ body {
 }
 
 .amazing-features-con img.feature-icon7 {
-    top: 48%;
+    top: calc(48% - 10px);
     left: 50%;
     width: 52px;
     z-index: 3;
@@ -565,7 +565,7 @@ body {
 
     .amazing-features-con img.feature-icon7 {
         width: 37px;
-        top: 50%;
+        top: calc(50% - 10px);
     }
 
     .trevomind-lead-form .secondary_btn {

@@ -170,6 +170,7 @@
                     <figure aria-hidden="true"><img src="assets/images/clientes/cliente-zazu-publicidade.png" alt=""></figure>
                 </div>
             </div>
+            <p class="trevomind-clientes-hint">Arraste para navegar pelos clientes.</p>
         </section>
 
         <section class="float-left w-100 amazing-features-con position-relative padding-top padding-bottom main-box" id="quem-somos">
@@ -497,6 +498,55 @@
                 tick();
             }
             document.querySelectorAll('.typing[data-full-text]').forEach(typeLoop);
+
+            document.querySelectorAll('.trevomind-clientes-marquee').forEach(function (marquee) {
+                var track = marquee.querySelector('.trevomind-clientes-track');
+                if (!track) return;
+
+                var dragging = false;
+                var startX = 0;
+                var startOffset = 0;
+                var offset = 0;
+
+                function setOffset(value) {
+                    offset = value;
+                    track.style.setProperty('--clientes-drag-offset', offset + 'px');
+                }
+
+                function clientX(event) {
+                    return event.touches ? event.touches[0].clientX : event.clientX;
+                }
+
+                function startDrag(event) {
+                    dragging = true;
+                    startX = clientX(event);
+                    startOffset = offset;
+                    marquee.classList.add('is-dragging');
+                    track.style.animationPlayState = 'paused';
+                    event.preventDefault();
+                }
+
+                function moveDrag(event) {
+                    if (!dragging) return;
+                    setOffset(startOffset + clientX(event) - startX);
+                }
+
+                function endDrag() {
+                    if (!dragging) return;
+                    dragging = false;
+                    marquee.classList.remove('is-dragging');
+                    track.style.animationPlayState = '';
+                }
+
+                marquee.addEventListener('mousedown', startDrag);
+                marquee.addEventListener('touchstart', startDrag, { passive: false });
+                window.addEventListener('mousemove', moveDrag);
+                window.addEventListener('touchmove', moveDrag, { passive: false });
+                window.addEventListener('mouseup', endDrag);
+                window.addEventListener('touchend', endDrag);
+                window.addEventListener('touchcancel', endDrag);
+            });
+
             if (typeof WOW === 'function') {
                 try {
                     new WOW().init();

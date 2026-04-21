@@ -166,6 +166,13 @@ body {
     width: 100%;
     overflow: hidden;
     padding: 8px 0 18px;
+    cursor: grab;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.trevomind-clientes-marquee.is-dragging {
+    cursor: grabbing;
 }
 
 .trevomind-clientes-marquee::before,
@@ -194,6 +201,7 @@ body {
     align-items: center;
     gap: 30px;
     width: max-content;
+    --clientes-drag-offset: 0px;
     animation: trevomindClientesMarquee 28s linear infinite;
 }
 
@@ -220,12 +228,21 @@ body {
     border-radius: 22px;
     filter: saturate(0.96);
     transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+    pointer-events: none;
 }
 
 .trevomind-clientes-track figure:hover img {
     transform: scale(1.035);
     filter: saturate(1.08);
     box-shadow: 0 18px 42px rgba(16, 32, 24, 0.12);
+}
+
+.trevomind-clientes-hint {
+    margin: 16px 0 0;
+    text-align: center;
+    color: var(--e-global-color-text);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .feature-box p,
@@ -325,10 +342,10 @@ body {
 
 @keyframes trevomindClientesMarquee {
     from {
-        transform: translateX(0);
+        transform: translateX(var(--clientes-drag-offset));
     }
     to {
-        transform: translateX(calc(-50% - 14px));
+        transform: translateX(calc(-50% - 14px + var(--clientes-drag-offset)));
     }
 }
 

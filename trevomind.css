@@ -42,7 +42,7 @@ body {
 .amazing-features-con img.feature-icon7 {
     top: 48%;
     left: 50%;
-    width: 66px;
+    width: 52px;
     z-index: 3;
     transform: translate(-50%, -50%);
 }
@@ -501,7 +501,7 @@ body {
     }
 
     .amazing-features-con img.feature-icon7 {
-        width: 54px;
+        width: 43px;
     }
 
     .trevomind-mid-cta {
@@ -564,7 +564,7 @@ body {
     }
 
     .amazing-features-con img.feature-icon7 {
-        width: 46px;
+        width: 37px;
         top: 50%;
     }
 

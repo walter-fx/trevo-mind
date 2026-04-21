@@ -39,6 +39,13 @@ body {
     margin-top: -18px;
 }
 
+.amazing-features-con img.feature-icon7 {
+    top: 48%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
 .trevomind-brand-logo {
     display: inline-flex;
     align-items: center;
@@ -492,6 +499,10 @@ body {
         justify-content: center !important;
     }
 
+    .amazing-features-con img.feature-icon7 {
+        width: 68px;
+    }
+
     .trevomind-mid-cta {
         align-items: flex-start;
         flex-direction: column;
@@ -549,6 +560,11 @@ body {
 
     .trevomind-lead-form {
         padding: 22px;
+    }
+
+    .amazing-features-con img.feature-icon7 {
+        width: 58px;
+        top: 50%;
     }
 
     .trevomind-lead-form .secondary_btn {
